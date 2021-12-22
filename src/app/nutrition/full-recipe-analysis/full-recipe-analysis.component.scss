@@ -1,0 +1,16 @@
+.recipe-wrapper {
+    text-align: center;
+    border: 1px solid #000;
+    margin: auto;
+    width: 75%;
+    padding: 1rem;
+    table tbody tr td:nth-child(odd) {
+        text-align: start;
+    }
+}
+
+.title {
+    border-bottom: 10px solid black;
+    padding: 0 0 0.25rem 0;
+    margin: 0 0 0.5rem 0;
+}

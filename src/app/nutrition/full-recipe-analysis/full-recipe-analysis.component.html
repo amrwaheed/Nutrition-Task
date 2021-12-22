@@ -1,0 +1,208 @@
+<div class="row">
+  <div class="col-sm-12  px-4 ">
+    <p class="mx-5">FF-3</p>
+  </div>
+  <div class="col-sm-12">
+    <div class="recipe-wrapper">
+      <div class="col-sm-12">
+        <table class="table table-responsive">
+          <thead>
+            <td colspan="3">
+              <div class="title ">
+                <h1 class="fw-300">Nutrition Facts</h1>
+              </div>
+              <div class="h6 text-start py-0">
+                Amount Per Serving
+              </div>
+
+              <div class="d-flex justify-content-between py-0 ">
+
+                <h3 class="py-0">Calories</h3>
+                <div class="pt-2">
+                  {{ nutritionFacts?.calories }}
+                </div>
+              </div>
+            </td>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.FAT.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.FAT.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.FAT.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.FAT.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.FAT.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.CHOLE.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.CHOLE.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.CHOLE.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.CHOLE.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.CHOLE.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.NA.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.NA.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.NA.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.NA.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.NA.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.CHOCDF.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.CHOCDF.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.CHOCDF.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.CHOCDF.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.CHOCDF.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.FIBTG.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.FIBTG.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.FIBTG.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.FIBTG.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.FIBTG.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.PROCNT.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.PROCNT.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.PROCNT.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.PROCNT.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.PROCNT.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.TOCPHA.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.TOCPHA.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.TOCPHA.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.TOCPHA.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.TOCPHA.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.VITC.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.VITC.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.VITC.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.VITC.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.VITC.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.VITD.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.VITD.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.VITD.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.VITD.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.VITD.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.CA.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.CA.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.CA.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.CA.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.CA.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.FE.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.FE.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.FE.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.FE.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.FE.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span class="h6">
+                  {{ nutritionFacts?.totalDaily.K.label }}
+                </span>
+                <span class="fs-13">
+                  {{ nutritionFacts.totalNutrients.K.quantity.toFixed(2) }}
+                  {{ nutritionFacts.totalNutrients.K.unit }}
+                </span>
+              </td>
+              <td>
+                {{ nutritionFacts.totalDaily.K.quantity.toFixed(2) }} {{ nutritionFacts.totalDaily.K.unit }}
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" class="text-center border-0 fs-11">
+                *Percent Daily Values are based on a 2000 calorie diet
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

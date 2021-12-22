@@ -1,0 +1,56 @@
+<div class="main-container">
+    <div class="container p-3  ">
+        <div class="row">
+            <div class="col-sm-12  ">
+                <h5 class="text-center">
+                    Enter an ingredient list list for what you are cooking,<br /> like
+                    <span class="text-green">"1 cup rice, 10 oz chickpeas"</span> , etc. Enter each ingredient on a new line.
+                </h5>
+                <p>FF-1</p>
+            </div>
+            <div class="col-sm-12 col-md-12  col-lg-6  d-flex flex-column text-center   mb-3">
+                <form [formGroup]="nutritionForm" (ngSubmit)="onSubmit()">
+                    <div class="mb-3 text-start">
+                        <label for="ingredient" class="form-label">Ingredient</label>
+                        <textarea class="form-control" id="ingredient" rows="8" formControlName="ingr" id="ingredient" placeholder="Ex.
+            1 cup rice, 10 oz chickpeas
+            "></textarea>
+                        <small class="text-danger" *ngIf="ingr?.errors?.required && ingr.touched">
+              ingredient is required</small>
+                    </div>
+                    <button type="button" class="btn btn-green mx-3" type="submit">
+            Analysis
+          </button>
+                    <button type="button" class="btn btn-green" (click)="newRecipe()">
+            New Recipe
+          </button>
+                </form>
+                <!-- Start inject component nutrition-list-table -->
+                <div class="w-100" *ngIf="ingredients.length > 0">
+                    <ng-container [ngTemplateOutlet]="componentTemplate"></ng-container>
+                </div>
+                <ng-template #componentTemplate>
+                    <app-nutrition-list-table [ingredients]="ingredients" [formValue]="nutritionForm?.value">
+                    </app-nutrition-list-table>
+                </ng-template>
+                <!-- End inject component nutrition-list-table -->
+            </div>
+
+
+
+            <!-- Start inject component app-full-recipe-analysis -->
+            <div class="col-sm-12 col-md-9 col-lg-6" *ngIf="nutritionFacts">
+                <ng-container [ngTemplateOutlet]="componentTemplate2"></ng-container>
+            </div>
+            <ng-template #componentTemplate2>
+                <app-full-recipe-analysis [nutritionFacts]="nutritionFacts">
+                </app-full-recipe-analysis>
+            </ng-template>
+            <!-- End inject component app-full-recipe-analysis -->
+
+
+
+        </div>
+
+    </div>
+</div>

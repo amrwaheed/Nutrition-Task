@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-green {
+  background-color: #7aca25;
+  border-color: #7aca25;
+  color: #fff;
+}
+
+.btn-green:hover {
+  background-color: #6db421;
+  border-color: #6db421;
+  color: #fff;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+.fs-11 {
+  font-size: 11px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+.text-green {
+  color: #7aca25;
+}

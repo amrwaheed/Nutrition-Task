@@ -1,0 +1,10 @@
+table {
+  border: 2px solid #e5ecf2;
+}
+thead th {
+  font-weight: 500;
+}
+
+.table > :not(:first-child) {
+  border-top: 2px solid #dddddd;
+}
